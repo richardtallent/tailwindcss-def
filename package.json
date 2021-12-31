@@ -1,0 +1,36 @@
+{
+	"name": "tailwindcss-def",
+	"version": "0.1.0",
+	"description": "TailwindCSS plugin that provides a `def:` variant, allowing component default styles to be easily overridden by component instances.",
+	"main": "index.js",
+	"files": [
+		"README.md",
+		"CHANGELOG.md",
+		"index.js"
+	],
+	"scripts": {},
+	"author": "Richard S. Tallent, II",
+	"license": "MIT",
+	"keywords": [
+		"tailwindcss",
+		"default",
+		"component",
+		"CSS"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/richardtallent/tailwindcss-def"
+	},
+	"homepage": "https://github.com/richardtallent/tailwindcss-def/tree/main/#readme",
+	"peerDependencies": {
+		"tailwindcss": "^3.0.7"
+	},
+	"prettier": {
+		"useTabs": true,
+		"semi": false,
+		"singleQuote": false,
+		"bracketSpacing": true,
+		"trailingComma": "es5",
+		"printWidth": 180
+	}
+}
