@@ -16,7 +16,7 @@ There's no run-time JavaScript involved, this is all pure CSS.
 npm install tailwindcss-def
 ```
 
-### 2. Add this to your `tailwindcss.config` file in the `module.exports` object:
+### 2. Add this to your `tailwindcss.config` file in the `module.exports` object
 
 ```js
 plugins: [
