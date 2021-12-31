@@ -36,6 +36,7 @@ plugins: [
 ### 4. Override as needed for your component instances
 
 ```HTML
+<MyButton>My Blue Button</MyButton>
 <MyButton class="bg-red-500">My Red Button</MyButton>
 ```
 
