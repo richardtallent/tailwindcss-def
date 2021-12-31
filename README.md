@@ -6,7 +6,7 @@ This plugin adds a new `def:` variant to your Tailwind CSS configuration. Any cl
 
 So, this allows you to create a **component** (Vue, React, etc.) that has _default_ classes for various styles, but when you _use_ that component, you can override those defaults _with normal Tailwind (or other) classes_.
 
-There's no run-time scripting, this is all pure CSS.
+There's no run-time JavaScript involved, this is all pure CSS.
 
 ## How do I use it?
 
@@ -65,13 +65,13 @@ But as a component author, there are also a few annoyances with the utility-clas
 
 1. **Don't style your components.** I don't like this approach. I like reasonable, beautiful defaults.
 
-2. **Pass overridable styles as component properties.** Hello, 1995 is calling, it wants its `<FONT COLOR>` back!
+2. **Pass overridable styles as component properties.** 1995 called, it wants its `<FONT COLOR>` back!
 
-3. **Use a higher-level selector in your component instance.** Yes, but that means having to go back to semantic naming, and either not being able to use TailwindCSS classes for those component instances, or having to use them with `@apply` so they can consistently override the default.
+3. **Use a higher-level selector in your component instance.** Yes, but that means having to go back to semantic classes and deeper selectors, and either not being able to use TailwindCSS classes for those component instances, or having to use them with `@apply` so they can consistently override the default.
 
-4. **CSS-in-JS**. _I.e._, try to rewrite the whole logic of "what overrides what" in JavaScript and apply the "winning" classes/styles dynamically. Feels kludgy, slow, and brittle to me.
+4. **CSS-in-JS**. _I.e._, try to rewrite the whole logic of "what overrides what" in JavaScript and apply the "winning" classes/styles dynamically. A few people are working on this, but it feels kludgy, slow, and brittle to me for 99% of use cases.
 
-I [came up with this idea](https://github.com/tailwindlabs/tailwindcss/discussions/3523) earlier this year, and decided it was time to make it a reusable plugin.
+So, I [came up with this idea](https://github.com/tailwindlabs/tailwindcss/discussions/3523) earlier this year, and decided it was finally time to make it a reusable plugin.
 
 ## License
 
