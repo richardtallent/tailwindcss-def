@@ -1,5 +1,9 @@
 # tailwindcss-def
 
+## Important Note
+
+After releasing and starting to test this plugin, I noticed that many of the default styles I was trying to set were also set by Tailwind's "preflight" CSS. Unfortunately, those preflight rules have a highers CSS specificity than the default classes created here. So, a number of use cases I hoped to make work here (such as button backgrounds) aren't working. I'm not sure if there's a way around this, especially for building and importing libraries, so *caveat emptor*.
+
 ## What does this plugin do?
 
 This plugin adds a new `def:` variant to your Tailwind CSS configuration. Any class using this variant _can be overridden by other TailwindCSS classes_.
